@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<link href="/static/css/farmerpublic.css" rel="stylesheet">
+<link href="https://unpkg.com/@stackoverflow/stacks" rel="stylesheet">
+<!--//////////////////// BEGIN PAGE /////////////////////-->
+
+<div class="w100 mx-auto mt64 mb64 fc-medium" style="max-width:1264px; padding-left:15px; padding-right:15px;">
+    <div id="header-content" class="grid gs32 ai-center md:fd-column">
+        <img class="wmx1 grid--cell ba bc-black-3 bg-white" role="presentation" alt=""
+            src="https://www.gardenoflife.com/content/wp-content/uploads/2016/08/bowl-of-cherries_500x400.jpg" id="gh-logo">
+        <div id="company-name-tagline" class="grid--cell pt16 md:fd-column md:ta-center md:pt0 md:mb0">
+            <h1 class="fs-display1 lh-xs fw-normal mb8 md:pt16">Ken's Cherry Farm</h1>
+            <p class="fs-title fc-light lh-md">The world’s best cherries, packed in premium packaging and then exported to the world’s most discerning consumers.</p>
+        </div>
+    </div>
+
+    <div id="navigation-bar" class="grid by py16 bc-black-3 mb24 mt12">
+        <div id="nav-items" class="grid--cell byw4 mr-auto">
+            <button class="s-btn s-btn__md" type="button"><a
+                    href="google.com">Home</a></button>
+            <button class="s-btn s-btn__md" type="button">Questions & Answers</button>
+            <button class="s-btn s-btn__md" type="button">About</button>
+        </div>
+        <div class="grid--cell ml-auto">
+            <button class="s-btn s-btn__primary" type="button">Ask a Question</button>
+            <button class="s-btn s-btn__outlined" type="button">Upvote Company</button>
+            <button class="s-btn s-btn__outlined" type="button">Downvote Company</button>
+            </button>
+        </div>
+    </div>
+    <!-- BEGIN PAGE CONTENT -->
+    <div class="grid gs32 gsx">
+
+        <!-- BEGIN LEFT COLUMN -->
+        <div class="grid--cell7">
+
+            <div class="fs-body2 mt24">
+                <h2 class="fs-headline1 fw-normal">Workers' Reviews</h2>
+                <div id="Posted Link Sample" class="s-card bs-sm mb24 p24">
+
+                    <h3>Both good and bad
+                    </h3>
+                    <p>Pros
+
+                        -nice, friendly owners
+                        -positive work environment and co-workers
+                        -sometimes nice to work outside
+                        <br>
+                        Cons
+                        
+                        -work in all weather conditions
+                        -varying hours
+                        (both expected with type of job)</p>
+                    <p class="fs-caption fc-light fw-bold mb4">321 votes &bull; 1.4k views</p>
+                    <div class="grid mt16">
+                        <div class="grid--cell">
+                            <button class="s-btn s-btn__outlined" type="button">Upvote</button>
+                            <button class="s-btn s-btn__outlined" type="button">Downvote</button>
+                            <button class="s-btn s-btn__outlined" type="button">Comment</button>
+                            <button class="s-btn s-btn__muted s-btn__outlined" type="button">Report</button>
+                        </div>
+                    </div>
+
+                </div>
+        
+
+                <div class="grid ff-column-nowrap mt16">
+                    <button class="grid--cell s-btn s-btn__outlined" type="button">See more</button>
+                </div>
+            </div>
+        </div>
+        <!-- END LEFT COLUMN -->
+        <!-- BEGIN RIGHT COLUMN -->
+        <div id="right-column" class="grid--cell5 mt24">
+
+            <div class="s-sidebarwidget">
+                <div class="s-sidebarwidget--header grid">
+                    <span class="grid--cell fl1">Overview</span>
+                    <a class="js-edit-watched-tags grid--cell ml12 d-none"
+                        href="/users/tag-notifications/3281191#watching-1">edit</a>
+                </div>
+
+                <div class="p16">
+                    <div class="fs-title mb8">
+                        12,108 <span class="tt-uppercase fc-light fs-caption">aggregate reputation</span>
+                    </div>
+
+                    <div class="grid gs8 mt8">
+                        <div class="grid--cell">
+                            <p class="fs-body1 fc-light">213 members</p>
+                        </div>
+                        <div class="grid--cell">
+
+                            <div class="s-avatar s-avatar__sm ba bc-white box-content">
+                                <div class="s-avatar--letter"><img src="https://i.stack.imgur.com/HBzom.jpg?s=32&g=1"
+                                        width="100%"></div>
+                            </div>
+                            <div class="s-avatar s-avatar__sm mln8 ba bc-white box-content">
+                                <div class="s-avatar--letter"><img src="https://i.stack.imgur.com/ee9qe.jpg?s=32&g=1"
+                                        width="100%"></div>
+                            </div>
+                            <div class="s-avatar s-avatar__sm mln8 ba bc-white box-content">
+                                <div class="s-avatar--letter"><img
+                                        src="https://www.gravatar.com/avatar/01438c3df63caf4c986268852935fcbd?s=32&d=identicon&r=PG"
+                                        width="100%"></div>
+                            </div>
+                            <div class="s-avatar s-avatar__sm mln8 ba bc-white box-content">
+                                <div class="s-avatar--letter"><img
+                                        src="https://www.gravatar.com/avatar/baa5ba5f65fdfc936bd0e74c4c5cfef7?s=32&d=identicon&r=PG&f=1"
+                                        width="100%"></div>
+                            </div>
+                            <div class="s-avatar s-avatar__sm mln8 ba bc-white box-content">
+                                <div class="s-avatar--letter"><img
+                                        src="https://www.gravatar.com/avatar/4c70ce00d59662f812dde08913649c82?s=32&d=identicon&r=PG&f=1"
+                                        width="100%"></div>
+                            </div>
+                            <div class="s-avatar s-avatar__sm mln8 ba bc-white box-content">
+                                <div class="s-avatar--letter"><img
+                                        src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=32"
+                                        width="100%"></div>
+                            </div>
+                            <div class="s-avatar s-avatar__sm mln8 ba bc-white box-content">
+                                <div class="s-avatar--letter"><img
+                                        src="https://www.gravatar.com/avatar/848870b4043d5ca319aa3111cb55845b?s=32&d=identicon&r=PG"
+                                        width="100%"></div>
+                            </div>
+                            <div class="s-avatar s-avatar__sm mln8 ba bc-white box-content">
+                                <div class="s-avatar--letter"><img
+                                        src="https://www.gravatar.com/avatar/8f1b86f59f4a2b2c0173833b26f794d5?s=32&d=identicon&r=PG&f=1"
+                                        width="100%"></div>
+                            </div>
+                            <div class="s-avatar s-avatar__sm mln8 ba bc-white box-content">
+                                <div class="s-avatar--letter"><img
+                                        src="https://lh6.googleusercontent.com/-cSvpCijBcRw/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaNOwFlzWVPCKkt288q1dPWKCvACow/mo/photo.jpg?sz=32"
+                                        width="100%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <span class="s-badge s-badge__rep m2">Good Salary</span>
+                        <span class="s-badge s-badge__rep m2">Transparent</span>
+                        <span class="s-badge s-badge__rep m2">Nice Owner</span>
+                    </div>
+
+                    <span class="d-inline-block pt4 pb4 fc-light">
+                        <svg aria-hidden="true" class="svg-icon iconArrowUp native" width="18" height="18"
+                            viewBox="0 0 18 18">
+                            <path fill="#535A60" d="M1 13h16L9 5z"></path>
+                        </svg>
+                        <span class="pl8">951,688 upvoted</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- END RIGHT COLUMN -->
+    </div>
+</div>
+<!--//////////////////// END PAGE /////////////////////-->
+{% endblock %}

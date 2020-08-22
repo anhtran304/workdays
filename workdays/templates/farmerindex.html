@@ -10,7 +10,7 @@
                     <a href="#" class="list-group-item list-group-item-action active">Basic Info</a>
                     <a href="#" class="list-group-item list-group-item-action">Manage Workers</a>
                     <a href="#" class="list-group-item list-group-item-action">Manage Rosters</a>
-                    <a href="#" class="list-group-item list-group-item-action">Company Photos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Manage Jobs</a>
                     <a href="#" class="list-group-item list-group-item-action">Company Description</a>
                     <a href="#" class="list-group-item list-group-item-action">Location</a>
                     <a href="#" class="list-group-item list-group-item-action">Reports</a>
@@ -31,12 +31,12 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <form>
+                                <form onsubmit="return false;">
                                     <div class="form-group row">
                                         <label for="username" class="col-4 col-form-label">User Name*</label>
                                         <div class="col-8">
                                             <input id="username" name="username" placeholder="Username"
-                                                class="form-control here" required="required" type="text">
+                                                class="form-control here" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -54,17 +54,10 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="select" class="col-4 col-form-label">Paying Rate Per Hour</label>
-                                        <div class="col-8">
-                                            <input id="number" name="number" placeholder="Paying Rate per hour"
-                                                class="form-control here" required="required" type="number">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
                                         <label for="email" class="col-4 col-form-label">Email*</label>
                                         <div class="col-8">
                                             <input id="email" name="email" placeholder="Email" class="form-control here"
-                                                required="required" type="text">
+                                             type="text">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -74,13 +67,13 @@
                                                 class="form-control here" type="text">
                                         </div>
                                     </div>
-                                    <div class="form-group row">
+                                    <!-- <div class="form-group row">
                                         <label for="publicinfo" class="col-4 col-form-label">Job's Description</label>
                                         <div class="col-8">
                                             <textarea id="publicinfo" name="publicinfo" cols="40" rows="4"
                                                 class="form-control"></textarea>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group row">
                                         <label for="newpass" class="col-4 col-form-label">New Password</label>
                                         <div class="col-8">
@@ -92,7 +85,7 @@
                                         <div class="offset-4 col-8">
                                             <button name="submit" type="submit" class="btn btn-primary">Update
                                                 Profile</button>
-                                            <button name="submit" type="submit" class="btn btn-info">Publish
+                                            <button name="submit" id="publish" class="btn btn-info">Publish
                                                 Profile</button>
                                         </div>
                                     </div>
@@ -106,4 +99,12 @@
         </div>
     </div>
 </div>
+<script>
+    openFarmerPublic = () => {
+       window.location = '/farmerpublic';
+   }
+   var publishBtn = document.getElementById("publish");
+   publishBtn.addEventListener("click", openFarmerPublic, false);
+  
+</script>
 {% endblock %}
