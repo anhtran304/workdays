@@ -66,6 +66,10 @@ header.masthead h1 {
   .showcase .showcase-container {
     padding: 3rem;
   }
+  .teams {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
 @media (max-device-width: 600px) {
