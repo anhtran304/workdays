@@ -15,15 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-import workdays.views
 
 urlpatterns = [
     path('', include('workdays.urls')),
-    path("farmerportal", workdays.views.farmerportal, name="farmerportal"),
-    path("workerportal", workdays.views.workerportal, name="workerportal"),
-    path("workerindex", workdays.views.workerindex, name="workerindex"),
-    path("farmerindex", workdays.views.farmerindex, name="farmerindex"),
-    path("workerpublic", workdays.views.workerpublic, name="workerpublic"),
-    path("farmerpublic", workdays.views.farmerpublic, name="farmerpublic"),
     path('admin/', admin.site.urls),
 ]

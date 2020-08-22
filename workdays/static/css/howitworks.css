@@ -1,0 +1,25 @@
+header.workhead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/workhead.jpg") no-repeat center center;
+  background-size: cover;
+  height: 20rem;
+}
+
+header.workhead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.workhead h1 {
+  font-size: 2rem;
+}
+
+header.workhead-text {
+  padding-top: 8rem;
+}

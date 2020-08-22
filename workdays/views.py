@@ -20,3 +20,6 @@ def farmerpublic(request):
 
 def workerpublic(request):
     return render(request, "workerpublic.html")
+
+def howitworks(request):
+    return render(request, "howitworks.html")
