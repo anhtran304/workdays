@@ -70,10 +70,14 @@ header.masthead h1 {
 
 @media (max-device-width: 600px) {
   .showcase .showcase-text {
-    padding: .5rem;
+    padding: 1rem;
   }
   .showcase .showcase-container {
-    padding: .5rem;
+    padding: 1rem;
+  }
+  .teams {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
