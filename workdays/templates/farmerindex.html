@@ -2,13 +2,14 @@
 {% load static %}
 
 {% block content %}
+<link href="/static/css/farmerindex.css" rel="stylesheet">
 <div class="content" style="padding: 5% 0;">
     <div class="container">
         <div class="row">
             <div class="col-md-3 ">
-                <div class="list-group ">
-                    <a href="#" class="list-group-item list-group-item-action active">Basic Info</a>
-                    <a href="#" class="list-group-item list-group-item-action">Manage Workers</a>
+                <div class="list-group" id="myList" role="tablist">
+                    <a href="#basic" data-toggle="list" role="tab" class="list-group-item list-group-item-action active">Basic Info</a>
+                    <a href="#workers" data-toggle="list" role="tab" class="list-group-item list-group-item-action">Manage Workers</a>
                     <a href="#" class="list-group-item list-group-item-action">Manage Rosters</a>
                     <a href="#" class="list-group-item list-group-item-action">Manage Jobs</a>
                     <a href="#" class="list-group-item list-group-item-action">Company Description</a>
@@ -19,80 +20,341 @@
 
                 </div>
             </div>
-            <div class="col-md-9">
-                <h3>Ken's Cherry Farm</h3>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h4>Company Profile</h4>
-                                <hr>
-                            </div>
+            <div class="tab-content col-md-9">
+                <div id="workers" class="tab-pane" role="tabpanel">
+                    <div class="col">
+                        <div class="card shadow">
+                          <div class="card-header border-0">
+                            <h3 class="mb-0">All workers</h3>
+                          </div>
+                          <div class="table-responsive">
+                            <table class="table align-items-center table-flush">
+                              <thead class="thead-light">
+                                <tr>
+                                  <th scope="col">Name</th>
+                                  <th scope="col">Payment</th>
+                                  <th scope="col">Status</th>
+                                  <th scope="col">Contract Completion</th>
+                                  <th scope="col"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">
+                                    <div class="media align-items-center">
+                                      <a href="#" class="avatar rounded-circle mr-3">
+                                        <img alt="Image placeholder" src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg">
+                                      </a>
+                                      <div class="media-body">
+                                        <span class="mb-0 text-sm">Khoi Nguyen</span>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <td>
+                                    $2,500 USD
+                                  </td>
+                                  <td>
+                                    <span class="badge badge-dot mr-4">
+                                      <i class="bg-warning"></i> pending
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="mr-2">60%</span>
+                                      <div>
+                                        <div class="progress">
+                                          <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right">
+                                    <div class="dropdown">
+                                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <div class="media align-items-center">
+                                      <a href="#" class="avatar rounded-circle mr-3">
+                                        <img alt="Image placeholder" src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg">
+                                      </a>
+                                      <div class="media-body">
+                                        <span class="mb-0 text-sm">Jane Doe</span>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <td>
+                                    $1,800 USD
+                                  </td>
+                                  <td>
+                                    <span class="badge badge-dot">
+                                      <i class="bg-success"></i> completed
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="mr-2">100%</span>
+                                      <div>
+                                        <div class="progress">
+                                          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right">
+                                    <div class="dropdown">
+                                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <div class="media align-items-center">
+                                      <a href="#" class="avatar rounded-circle mr-3">
+                                        <img alt="Image placeholder" src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg">
+                                      </a>
+                                      <div class="media-body">
+                                        <span class="mb-0 text-sm">Laurel Vo</span>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <td>
+                                    $3,150 USD
+                                  </td>
+                                  <td>
+                                    <span class="badge badge-dot mr-4">
+                                      <i class="bg-danger"></i> delayed
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="mr-2">72%</span>
+                                      <div>
+                                        <div class="progress">
+                                          <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right">
+                                    <div class="dropdown">
+                                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <div class="media align-items-center">
+                                      <a href="#" class="avatar rounded-circle mr-3">
+                                        <img alt="Image placeholder" src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg">
+                                      </a>
+                                      <div class="media-body">
+                                        <span class="mb-0 text-sm">Anh Tran</span>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <td>
+                                    $4,400 USD
+                                  </td>
+                                  <td>
+                                    <span class="badge badge-dot">
+                                      <i class="bg-info"></i> on schedule
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="mr-2">90%</span>
+                                      <div>
+                                        <div class="progress">
+                                          <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right">
+                                    <div class="dropdown">
+                                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">
+                                    <div class="media align-items-center">
+                                      <a href="#" class="avatar rounded-circle mr-3">
+                                        <img alt="Image placeholder" src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg">
+                                      </a>
+                                      <div class="media-body">
+                                        <span class="mb-0 text-sm">Jane Jane</span>
+                                      </div>
+                                    </div>
+                                  </th>
+                                  <td>
+                                    $2,200 USD
+                                  </td>
+                                  <td>
+                                    <span class="badge badge-dot mr-4">
+                                      <i class="bg-success"></i> completed
+                                    </span>
+                                  </td>
+                                  <td>
+                                    <div class="d-flex align-items-center">
+                                      <span class="mr-2">100%</span>
+                                      <div>
+                                        <div class="progress">
+                                          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right">
+                                    <div class="dropdown">
+                                      <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="card-footer py-4">
+                            <nav aria-label="...">
+                              <ul class="pagination justify-content-end mb-0">
+                                <li class="page-item disabled">
+                                  <a class="page-link" href="#" tabindex="-1">
+                                    <i class="fas fa-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                </li>
+                                <li class="page-item active">
+                                  <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">
+                                    <i class="fas fa-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <form onsubmit="return false;">
-                                    <div class="form-group row">
-                                        <label for="username" class="col-4 col-form-label">User Name*</label>
-                                        <div class="col-8">
-                                            <input id="username" name="username" placeholder="Username"
-                                                class="form-control here" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="name" class="col-4 col-form-label">First Name*</label>
-                                        <div class="col-8">
-                                            <input id="name" name="name" placeholder="First Name"
-                                                class="form-control here" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="lastname" class="col-4 col-form-label">Last Name*</label>
-                                        <div class="col-8">
-                                            <input id="lastname" name="lastname" placeholder="Last Name"
-                                                class="form-control here" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="email" class="col-4 col-form-label">Email*</label>
-                                        <div class="col-8">
-                                            <input id="email" name="email" placeholder="Email" class="form-control here"
-                                             type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="website" class="col-4 col-form-label">Website</label>
-                                        <div class="col-8">
-                                            <input id="website" name="website" placeholder="website"
-                                                class="form-control here" type="text">
-                                        </div>
-                                    </div>
-                                    <!-- <div class="form-group row">
-                                        <label for="publicinfo" class="col-4 col-form-label">Job's Description</label>
-                                        <div class="col-8">
-                                            <textarea id="publicinfo" name="publicinfo" cols="40" rows="4"
-                                                class="form-control"></textarea>
-                                        </div>
-                                    </div> -->
-                                    <div class="form-group row">
-                                        <label for="newpass" class="col-4 col-form-label">New Password</label>
-                                        <div class="col-8">
-                                            <input id="newpass" name="newpass" placeholder="New Password"
-                                                class="form-control here" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="offset-4 col-8">
-                                            <button name="submit" type="submit" class="btn btn-primary">Update
-                                                Profile</button>
-                                            <button name="submit" id="publish" class="btn btn-info">Publish
-                                                Profile</button>
-                                        </div>
-                                    </div>
-                                </form>
+                      </div>
+                </div>
+                <div id="basic" class="tab-pane active" role="tabpanel">
+                    <h3>Ken's Cherry Farm</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Company Profile</h4>
+                                    <hr>
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form onsubmit="return false;">
+                                        <div class="form-group row">
+                                            <label for="username" class="col-4 col-form-label">User Name*</label>
+                                            <div class="col-8">
+                                                <input id="username" name="username" placeholder="Username"
+                                                    class="form-control here" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="name" class="col-4 col-form-label">First Name*</label>
+                                            <div class="col-8">
+                                                <input id="name" name="name" placeholder="First Name"
+                                                    class="form-control here" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lastname" class="col-4 col-form-label">Last Name*</label>
+                                            <div class="col-8">
+                                                <input id="lastname" name="lastname" placeholder="Last Name"
+                                                    class="form-control here" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-4 col-form-label">Email*</label>
+                                            <div class="col-8">
+                                                <input id="email" name="email" placeholder="Email" class="form-control here"
+                                                 type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="website" class="col-4 col-form-label">Website</label>
+                                            <div class="col-8">
+                                                <input id="website" name="website" placeholder="website"
+                                                    class="form-control here" type="text">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="form-group row">
+                                            <label for="publicinfo" class="col-4 col-form-label">Job's Description</label>
+                                            <div class="col-8">
+                                                <textarea id="publicinfo" name="publicinfo" cols="40" rows="4"
+                                                    class="form-control"></textarea>
+                                            </div>
+                                        </div> -->
+                                        <div class="form-group row">
+                                            <label for="newpass" class="col-4 col-form-label">New Password</label>
+                                            <div class="col-8">
+                                                <input id="newpass" name="newpass" placeholder="New Password"
+                                                    class="form-control here" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="offset-4 col-8">
+                                                <button name="submit" type="submit" class="btn btn-primary">Update
+                                                    Profile</button>
+                                                <button name="submit" id="publish" class="btn btn-info">Publish
+                                                    Profile</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+    
                         </div>
-
                     </div>
                 </div>
             </div>
