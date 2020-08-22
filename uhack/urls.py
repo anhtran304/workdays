@@ -23,5 +23,6 @@ urlpatterns = [
     path("workerportal", workdays.views.workerportal, name="workerportal"),
     path("workerindex", workdays.views.workerindex, name="workerindex"),
     path("farmerindex", workdays.views.farmerindex, name="farmerindex"),
+    path("workerpublic", workdays.views.workerpublic, name="workerpublic"),
     path('admin/', admin.site.urls),
 ]
