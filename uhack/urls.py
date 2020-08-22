@@ -21,5 +21,7 @@ urlpatterns = [
     path('', include('workdays.urls')),
     path("farmerportal", workdays.views.farmerportal, name="farmerportal"),
     path("workerportal", workdays.views.workerportal, name="workerportal"),
+    path("workerindex", workdays.views.workerindex, name="workerindex"),
+    path("farmerindex", workdays.views.farmerindex, name="farmerindex"),
     path('admin/', admin.site.urls),
 ]

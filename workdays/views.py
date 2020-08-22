@@ -8,3 +8,15 @@ def farmerportal(request):
 
 def workerportal(request):
     return render(request, "workerportal.html")
+
+def workerindex(request):
+    return render(request, "workerindex.html")
+
+def farmerindex(request):
+    return render(request, "farmerindex.html")
+
+def farmerpublic(request):
+    return render(request, "farmerpublic.html")
+
+def workerpublic(request):
+    return render(request, "workerpublic.html")
