@@ -59,9 +59,21 @@ header.masthead h1 {
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-device-width: 768px) {
   .showcase .showcase-text {
     padding: 3rem;
+  }
+  .showcase .showcase-container {
+    padding: 3rem;
+  }
+}
+
+@media (max-device-width: 600px) {
+  .showcase .showcase-text {
+    padding: .5rem;
+  }
+  .showcase .showcase-container {
+    padding: .5rem;
   }
 }
 
