@@ -46,6 +46,8 @@ WorkDays uses a number of open source projects to work properly:
 
 * [Django] - The Web framework for perfectionists with deadlines!
 * [Twitter Bootstrap4] - great UI boilerplate for modern web apps
+* [HTML5] - the latest evolution of the standard that defines HTML
+* [CSS3] - CSS is the language we use to style an HTML document.
 * [jQuery] - duh
 
 And of course WorkDays itself is open source with a [public repository][wd] on GitHub.
@@ -70,3 +72,5 @@ MIT
    [Twitter Bootstrap4]: <http://twitter.github.com/bootstrap/>
    [jQuery]: <http://jquery.com>
    [Django]: <https://www.djangoproject.com/>
+   [HTML5]: <https://www.w3schools.com/html/>
+   [CSS3]: <https://www.w3schools.com/css/>
