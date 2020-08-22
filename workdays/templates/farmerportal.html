@@ -45,7 +45,7 @@
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
                     <p class="forgot-password">Forgot your password?</p>
-                    <button id="nextBtn" class="control-button in">Sign In</button>
+                    <button class="next1Btn control-button in">Sign In</button>
                 </form>
             </div>
             <div class="sign-up" id="sign-up-info">
@@ -76,7 +76,7 @@
                     <input type="text" placeholder="Account Name" />
                     <input type="email" placeholder="Email" />
                     <input type="password" placeholder="Password" />
-                    <button id="nextBtn" class="control-button up">Sign Up</button>
+                    <button class="next2Btn control-button up">Sign Up</button>
                 </form>
             </div>
         </div>
@@ -88,7 +88,8 @@
     // Buttons to 'switch' the page
     var openSignUpButton = document.getElementById("slide-left-button");
     var openSignInButton = document.getElementById("slide-right-button");
-    var nextBtn = document.getElementById("nextBtn");
+    var next1Btn = document.querySelector(".next1Btn");
+    var next2Btn = document.querySelector(".next2Btn");
 
     // The sidebars
     var leftText = document.getElementById("sign-in");
@@ -153,6 +154,7 @@
     // When a 'switch' button is pressed, switch page
     openSignUpButton.addEventListener("click", openSignUp, false);
     openSignInButton.addEventListener("click", openSignIn, false);
-    nextBtn.addEventListener("click", openFarmerIndex, false);
+    next1Btn.addEventListener("click", openFarmerIndex, false);
+    next2Btn.addEventListener("click", openFarmerIndex, false);
 </script>
 {% endblock %}
