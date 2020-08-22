@@ -8,6 +8,7 @@ The problem
 
 
 The solution
+
 WorkDays is a solution for solving the issue of
 
   - Having to repeatedly go through the recruitment process every time a new season starts
