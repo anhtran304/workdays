@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>TasLife</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script></head>
+<body>
+
+  <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">Tas<strong class="text-primary">Life</strong></a>
+            <a class="btn btn-primary" href="/admin">Log In</a>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    <footer class="bg-light" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li class="list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#">Privacy Policy</a>
+                </li>
+                </ul>
+                <p class="text-muted small mb-4 mb-lg-0">&copy; TasLife 2020. All Rights Reserved.</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
