@@ -13,7 +13,7 @@ WorkDays is a solution for solving the issue of
 
   - Having to repeatedly go through the recruitment process every time a new season starts
   - Having to repeatedly applying for new farm jobs every time a season ends
-  
+
 **It's LinkedIn for farmers and more!**
 
 # Features
@@ -26,8 +26,8 @@ Farm owners:
 Workers:
   - Submit their experiences, skills and availabilities to the system for processing
   - Receive reviews and feedbacks from employers after their contract ends
- 
-WorkDays: 
+
+WorkDays:
   - Automatically rank workers suitability for a farm based on workers' experiences, skills and feedbacks received
   - Provide farms with the most suitable candidates
   - Has the ability to call in extra workers should a farm needs (for example: in case of unexpected leaves, having extra tasks,...)
@@ -35,7 +35,7 @@ WorkDays:
 
 # Why?
 
-> WorkDays takes away all the hassels that both farms and workers have to go through years after years. 
+> WorkDays takes away all the hassels that both farms and workers have to go through years after years.
 
 >By using WorkDays, farms can simply state their needs such as number of workers, time period or other specific requirements and we will deliver the best candidates for them. Farms do not have to worry about the recruitment proccess, paperwork and payroll anymore. 
 
