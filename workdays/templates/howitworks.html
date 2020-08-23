@@ -5,60 +5,64 @@
 
 <link href="/static/css/howitworks.css" rel="stylesheet">
 
-<!-- Masthead -->
+<!-- workhead -->
 <header class="workhead text-white text-center">
   <div class="overlay"></div>
-  <div class="container workhead-text">
+  <div class="container">
     <div class="row">
-      <div class="col-xl-9 mx-auto">
-      </div>
       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form onsubmit="return false;">
-          <div class="form-row">
-            <div class="col-12 mb-2 mb-md-0">
-              {% comment %} <a href="/howitworks" class="btn btn-block btn-lg btn-primary">Show me!</a> {% endcomment %}
-            </div>
-          </div>
-        </form>
+        <div class="col-12 workhead-text">
+          <h4><i><q>A dream does not become reality through magic; it takes sweat, determination, and hard work</q></i></h4>
+          <p> - Colin Powell</p>
+        </div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- Icons Grid -->
-<section class="features-icons bg-light text-center">
-  <div class="container">
-    <h3>Get the best employees, with confidence</h3>
+<!--  workvideo -->
+<section>
+  <div class="container workvideo-container">
     <div class="row">
-      <div class="col-lg-4">
-        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-          <div class="features-icons-icon d-flex">
-            <i class="icon-people m-auto text-primary"></i>
-          </div>
-          <h4>Organise roster, automatically</h4>
-          <p class="lead mb-0">Easy to organise roster for employees</p>
-        </div>
+      <div class="col-lg-6 col-md-12 order-lg-2" style="text-align: center;">
+        <iframe style="width: 100%;height: 100%;"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
       </div>
-      <div class="col-lg-4">
-        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-          <div class="features-icons-icon d-flex">
-            <i class="icon-bag m-auto text-primary"></i>
+      <div class="col-lg-6 col-md-12 order-lg-1">
+        <div class="mb-4 mt-2">
+          <div class="d-flex">
+            <h4 class="text-primary">Farm owners</h4>
           </div>
-          <h4>Know the cost up front</h4>
-          <p class="lead mb-0">Fullfill shift within minutes and know exactly what you’ll pay. No overhead cost.</p>
+          <ul class="lead text-muted mb-0 pl-0" style="list-style: none; font-size: 1rem">
+            <li>
+              <span>Request our system to provide them with a list of workers that fits their requirements</span>
+            </li>
+            <li>
+              <span>Publish their farms'profiles for reviews and feedbacks from workers</span>
+            </li>
+            <li>
+              <span>Manage workers and rosters directly on the system</span>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+        <div>
           <div class="features-icons-icon d-flex">
-            <i class="icon-check m-auto text-primary"></i>
+            <h4 class="text-success">Workers</h4>
           </div>
-          <h4>We’re here for you 24/7</h4>
-          <p class="lead mb-0">Reach out to us at any time! We have your back, from answering your questions to resolving issues.</p>
+          <ul class="lead text-muted mb-0 pl-0" style="list-style: none; font-size: 1rem">
+            <li>
+              <span>Submit their experiences, skills and availabilities to the system for processing</span>
+            </li>
+            <li>
+              <span>Receive reviews and feedbacks from employers after their contract ends</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 {% endblock %}
