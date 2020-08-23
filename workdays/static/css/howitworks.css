@@ -20,12 +20,12 @@ header.workhead .overlay {
   header.workhead {
     height: 15rem;
   }
-  .workhead-text {
-    margin-top: 4rem;
-  }
   .workvideo-container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .workhead-text {
+    margin-top: 4rem !important;
   }
 }
 
