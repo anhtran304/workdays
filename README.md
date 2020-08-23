@@ -37,7 +37,7 @@ WorkDays:
 
 > WorkDays takes away all the hassels that both farms and workers have to go through years after years.
 
-> By using WorkDays, farms can simply state their needs such as number of workers, time period or other specific requirements and we will deliver the best candidates for them. Farms do not have to worry about the recruitment proccess, paperwork and payroll anymore. 
+> By using WorkDays, farms can simply state their needs such as number of workers, time period or other specific requirements and we will deliver the best candidates for them. Farms do not have to worry about the recruitment proccess, paperwork and payroll anymore.
 
 > On the other hands, valuable workers will be remembered and offered new opportunities from other farms when their current contracts end. With our automatic payroll feature, workers are also protected from underpayment and missed or late payment. Everyone deserve to have stable income!
 
