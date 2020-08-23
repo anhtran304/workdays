@@ -1,5 +1,5 @@
 # WorkDays
-http://workdays.herokuapp.com/
+DEMO: http://workdays.herokuapp.com/
 
 The problem
 - [Farm worker shortage] due to a lack of overseas workers but many workers don't know which farms are looking for people
