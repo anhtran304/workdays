@@ -23,3 +23,6 @@ def workerpublic(request):
 
 def howitworks(request):
     return render(request, "howitworks.html")
+
+def about(request):
+    return render(request, "about.html")

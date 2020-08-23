@@ -12,4 +12,5 @@ urlpatterns = [
     path("workerpublic/", views.workerpublic, name="workerpublic"),
     path("farmerpublic/", views.farmerpublic, name="farmerpublic"),
     path("howitworks/", views.howitworks, name="howitworks"),
+    path("about/", views.about, name="about"),
 ]
